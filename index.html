@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alooga | Aluguel de objetos próximo a você</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+
+	<header class="cabecalhoPrincipal">
+		<div class="container">
+			<h1 class="cabecalhoPrincipal-titulo">
+				<a href="#">ALOOGA</a>
+			</h1>
+
+			<nav class="cabecalhoPrincipal-nav">
+				<a class="cabecalhoPrincipal-nav-link" href="#">Quem somos</a>
+				<a class="cabecalhoPrincipal-nav-link" href="#">Como funciona</a>
+				<a class="cabecalhoPrincipal-nav-link" href="#">Contato</a>
+			</nav>
+		</div>
+
+	</header>
+
+	<main class="conteudoPrincipal">
+		<div class="container">
+			<h2 class="subtitulo">Nossas funcionalidades</h2>
+
+			<nav>
+				<ul class="conteudoPrincipal-funcionalidades">
+					<li class="conteudoPrincipal-funcionalidades-link"><a href="#">Destaque na busca</a></li>
+					<li class="conteudoPrincipal-funcionalidades-link"><a href="#">Painel</a></li>
+					<li class="conteudoPrincipal-funcionalidades-link"><a href="#">Pagamento</a></li>
+					<li class="conteudoPrincipal-funcionalidades-link"><a href="#">Pagina de perfil</a></li>
+					<li class="conteudoPrincipal-funcionalidades-link"><a href="#">APP mobile</a></li>
+					<li class="conteudoPrincipal-funcionalidades-link"><a href="#">Monitoramento</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<section class="aprendaSobre">
+			<div class="container">
+
+				<div class="aprendaSobre-sobre">
+					<h2 class="aprendaSobre-sobre-title">Alugar nunca foi tão seguro!</h2>
+					<ul class="aprendaSobre-sobre-list">
+						<li class="aprendaSobre-sobre-item">Quer fazer bonito e ganhar a confiança dos outros usuários?</li>
+						<li class="aprendaSobre-sobre-item">Quer a garantia de usuários de confiança?</li>
+						<li class="aprendaSobre-sobre-item">Temos um contrato de locação exclusivo para os mais prevenidos.</li>
+					</ul>
+					<button class="aprendaSobre-button">Anuncie conosco</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="formulario">
+			<div class="container">
+
+				<div class="formulario-sobre">
+					<h2 class="formulario-sobre-title">Faça seu cadastro conosco!</h2>
+						<div id="mensagemView"></div>
+
+					<form class="form" onsubmit="cadastroController.adiciona(event)">
+
+							<div class="form-group">
+									<label for="nome">Nome completo</label>
+									<input type="text" maxlength="30" name="nome_p" value="" class="form-control"/>
+							</div>
+
+							<div class="form-group">
+									<label for="email" class="active">E-mail</label>
+									<input type="text" id="email" name="username" value="" tabindex="1" class="form-control">
+							</div>
+
+							<div class="form-group">
+									<label for="empresa">Empresa</label>
+									<input id="empresa" type="text" class="form-control"/>
+							</div>
+							<button class="formulario-button" type="submit">Cadastrar</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+<br>
+<br>
+
+<div id="cadastrosView"></div>
+
+	<footer class="rodapePrincipal">
+		<div class="container">
+
+			<section class="rodapePrincipal-navMap">
+				<h3 class="subtitulo">Categorias</h3>
+				<nav class="rodapePrincipal-navMap-list">
+
+					<h4 class="navmap-list-title navmap-list-title-backend">Esportes</h4>
+					<a class="rodapePrincipal-navMap-link" href="#">Skate</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Camping</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Escalada</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Musculação</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Ciclismo</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Pesca</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Artes Marciais</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Outros</a>
+
+					<h4 class="navmap-list-title navmap-list-title-frontend">Eletrônicos</h4>
+					<a class="rodapePrincipal-navMap-link" href="#">Notebook</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Camera fotográfica</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Smartphone</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Projetor de tela</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Áudio e som</a>
+					<a class="rodapePrincipal-navMap-link" href="#">TV</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Tablet</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Outros</a>
+
+					<h4 class="navmap-list-title navmap-list-title-framework">Ferramentas</h4>
+					<a class="rodapePrincipal-navMap-link" href="#">Parafusadeira</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Solda</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Furadeira</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Enceradeira</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Gerador</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Compressor de ar</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Outros</a>
+
+					<h4 class="navmap-list-title navmap-list-title-bancoDeDados">Utensílios domésticos</h4>
+					<a class="rodapePrincipal-navMap-link" href="#">Aspirador de pó</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Balança</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Liquidificador</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Ventilador</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Cafeteira</a>
+					<a class="rodapePrincipal-navMap-link" href="#">Outros</a>
+
+				</nav>
+			</section>
+
+		</div>
+
+		<section class="rodapePrincipal-patrocinadores">
+			<div class="container">
+				<ul class="rodapePrincipal-patrocinadores-list">
+					<img src="img/redes-sociais.png" width="200">
+				</ul>
+			</div>
+		</section>
+	</footer>
+
+	<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBGgzU3petFVTNj0y92XP0jAYJe3IjwcGs",
+	    authDomain: "assignment1-f3833.firebaseapp.com",
+	    databaseURL: "https://assignment1-f3833.firebaseio.com",
+	    projectId: "assignment1-f3833",
+	    storageBucket: "",
+	    messagingSenderId: "629774399569"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="js/app/models/Cadastro.js"></script>
+	<script src="js/app/controllers/CadastroController.js"></script>
+	<script src="js/app/models/ListaCadastros.js"></script>
+	<script src="js/app/views/View.js"></script>
+	<script src="js/app/views/CadastrosView.js"></script>
+	<script src="js/app/models/Mensagem.js"></script>
+	<script src="js/app/views/MensagemView.js"></script>
+	<script>
+			let cadastroController = new CadastroController();
+	</script>
+
+</body>
+</html>
